@@ -5,20 +5,22 @@ def minmax(depth,node_index,maximizing_agent,values,path):
     if maximizing_agent:
         best = float("-inf")
         best_path=[]
-        value,new_path = minmax(depth+1,node_index*2+1,False,values,path+[node_index])
-        if value > best:
-            best = value
-            best_path = new_path
-        return best,best_path
+        for i in range(2):
+            value,new_path = minmax(depth+1,node_index*2+1,False,values,path+[node_index])
+            if value > best:
+                best = value
+                best_path = new_path
+            return best,best_path
     
     else:
         best = float("inf")
         best_path=[]
-        value,new_path = minmax(depth+1,node_index*2+1,True,values,path+[node_index])
-        if value < best:
-            best = value
-            best_path = new_path
-        return best,best_path
+        for i in range(2):
+            value,new_path = minmax(depth+1,node_index*2+1,True,values,path+[node_index])
+            if value < best:
+                best = value
+                best_path = new_path
+            return best,best_path
     
 values = [2,5,6,1,5,7,8,12,25]
 
