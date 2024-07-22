@@ -1,6 +1,6 @@
 # Machine-Learning-Lab-Programs
 Lab Programs Repository This repository contains a collection of lab programs developed for JSSSTU Machine Learning Lab 20CS67L
-1.Visualize the n-dimensional data using 3D surface plots.\n
+1.Visualize the n-dimensional data using 3D surface plots.
   Write a program to implement the Best First Search (BFS) algorithm.
 2.Visualize the n-dimensional data using contour plots.
   Write a program to implement the A* algorithm.
