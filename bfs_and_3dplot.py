@@ -46,8 +46,8 @@ start = 'A'
 goal = 'G'
 
 path,cost = bfs(graph,start,goal)
-print(path)
-print(f"total cost is{cost}")
+print(f"BFS search path is {path}")
+print(f"total cost is {cost}")
 
 # 3D surface plot
 
