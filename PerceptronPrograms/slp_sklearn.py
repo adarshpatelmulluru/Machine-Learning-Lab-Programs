@@ -1,6 +1,5 @@
 import numpy as np
 from sklearn.neural_network import MLPClassifier
-from sklearn.metrics import accuracy_score
 
 X_and = np.array([[0, 0], [0, 1], [1, 0], [1, 1]])
 y_and = np.array([0, 0, 0, 1])
